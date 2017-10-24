@@ -10,6 +10,8 @@ namespace WebApiCommunication
     {
         static void Main(string[] args)
         {
+            //Gå ind og hent RestSharp til applicationen, og slet den i packages i solution mappen for din application.
+
         }
     }
 }

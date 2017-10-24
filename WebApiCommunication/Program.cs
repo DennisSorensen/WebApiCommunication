@@ -16,6 +16,11 @@ namespace WebApiCommunication
             RestClient client = new RestClient("https://dawa.aws.dk/adresser"); //Lav en client til dit api
             RestRequest request = new RestRequest("?vejnavn=<indsætVejnavn>&husnr=<indsætHusnr>&struktur=mini", Method.GET); //Lav et request til api'en
 
+            //Tester requesten i en browser, og laver json dataen om til en klasse, og indsætter den i projektet
+
+            IRestResponse<List<RootObject>> response = client.Execute<List<RootObject>>(request); //Vi laver en liste af RootObjects som vi får fra api'en
+
+
         }
     }
 }
